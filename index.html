@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Encoding API</title>
+	</head>
+	<body>
+
+        <script>
+            // encoding text
+            const encoder = new TextEncoder();
+            const encodedArray = encoder.encode('Mozammal Haque');
+            console.log(encodedArray);
+            console.log("Encoded Array: " + encodedArray.toString());
+            // decoding text
+            const decoder = new TextDecoder();
+            const decodedString = decoder.decode(encodedArray);
+            console.log('Decoded string: ' + decodedString);
+        </script>
+
+    </body>
+</html>
